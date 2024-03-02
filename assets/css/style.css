@@ -265,7 +265,6 @@ input:checked+.slider:before {
 }
 
 .box-radio input:checked~.checkmark:after {
-    /* display: none; */
     background-color: #1A9FFF;
 }
 
@@ -533,6 +532,7 @@ input:checked+.slider:before {
         align-items: center;
         background-color: #75C5FF;
         transition: 0.3s;
+        z-index: 7;
     }
 
     .menulist.show {
