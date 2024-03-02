@@ -42,9 +42,10 @@
                         <div class="search-box">
                             <input type="search" class="input-s" placeholder="Search here...">
                         </div>
-                        <div class="check-box">
-                            <span class="circle cursor-p"></span>
-                        </div>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
                         <img src="./assets/image/img-1.png" alt="image" class="wv-fit wv-30">
                     </div>
                 </nav>
@@ -272,15 +273,23 @@
                 </div>
                 <div class="col-12 col-lg-4">
                     <p class="jhone mr-top-17">Filters</p>
-                    <form action="get" class="d-flex gap-10 gap-9 flex-w flex-dir">
-                        <div class="d-flex gap-10 align-center">
+                    <form action="get" class="d-flex gap-9 flex-w flex-dir">
+                        <!-- <div class="d-flex gap-10 align-center">
                             <input type="radio" name="like" class="btn-radio" id="m">
                             <label for="m" class="jhone btn-most cursor-p">Most Liked</label>
                         </div>
                         <div class="d-flex gap-10 align-center">
                             <input type="radio" name="like" class="btn-radio" id="r">
                             <label for="r" class="jhone btn-most cursor-p">Recently Received</label>
-                        </div>
+                        </div> -->
+                        <label class="box-radio cursor-p jhone"><p class="btn-most cursor-p jhone">Most Liked</p>
+                            <input type="radio" name="radio" class="btn-radio">
+                            <span class="checkmark btn-radio"></span>
+                        </label>
+                        <label class="box-radio cursor-p jhone"><p class="btn-most cursor-p jhone">Recently Received</p>
+                            <input type="radio" name="radio">
+                            <span class="checkmark btn-radio"></span>
+                        </label>
                     </form>
                     <p class="jhone mr-top-24">Suggestions for you</p>
                     <div class="mr-top-24 over-flow">
